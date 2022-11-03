@@ -1,5 +1,7 @@
 # conda-export
-Refine of conda env export --from-history
+Refine of conda env export --from-history.
+Now you can export environment with version using --from-history option.
+You can choose which package should not appear in the environment.yaml file by CLI and a .yaml file.
 
 ## Sample Output
 Output of `conda env export --from-history` with version number.

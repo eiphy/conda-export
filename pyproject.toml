@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ecoport"
-version = "0.0.0"
+version = "0.0.1"
 description = "Eiphy's Conda Export"
 readme = "README.md"
 authors = [{name = "Bai Huanyu", email = "eiphnix@gmail.com"}]
@@ -23,7 +23,7 @@ requires-python = ">=3.7"
 repository = "https://github.com/eiphy/conda-export"
 
 [tool.bumpver]
-current_version = "0.0.0"
+current_version = "0.0.1"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 commit = false
