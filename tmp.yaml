@@ -1,0 +1,10 @@
+name: torch
+channels:
+- pytorch
+- defaults
+dependencies:
+- isort=5.9.3
+- python=3.10.6
+- pytorch=1.13.0
+- torchaudio=0.13.0
+- torchvision=0.14.0

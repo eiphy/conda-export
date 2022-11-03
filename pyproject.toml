@@ -1,0 +1,40 @@
+[build-system]
+requires = ["wheel", "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecoport"
+version = "0.0.0"
+description = "Eiphy's Conda Export"
+readme = "README.md"
+authors = [{name = "Bai Huanyu", email = "eiphnix@gmail.com"}]
+license = {file = "LICENSE"}
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["package management"]
+dependencies = ["pyyaml"]
+requires-python = ">=3.7"
+
+[project.urls]
+repository = "https://github.com/eiphy/conda-export"
+
+[tool.bumpver]
+current_version = "0.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = false
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"', 'version = "{version}"'
+]
+"src/ecoport/__init__.py" = ["{version}"]
+
+[project.scripts]
+ecoport = "ecoport.__main__:main"
