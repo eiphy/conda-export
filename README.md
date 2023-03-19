@@ -24,7 +24,7 @@ python -m ecoport -f tmp.yaml                   # Save env to ./tmp.yaml
 python -m ecoport                               # Save env to ./environment.yaml
 python -m ecoport --exclusions isort            # Excludes isort
 python -m ecoport --config test/config.yaml     # Using config option (current only option for exclusion). --exclusion has higher priority.
-python -m ecoport --no-prefix                   # eliminate the prefix entry
+python -m ecoport --no-prefix                   # Eliminate the prefix entry
 ```
 
 Sample config file (test/config.yaml):
