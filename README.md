@@ -3,6 +3,21 @@ Refine of conda env export --from-history.
 Now you can export environment with version using --from-history option.
 You can choose which package should not appear in the environment.yaml file by CLI and a .yaml file.
 
+## Installation
+You may install the package as follows:
+```bash
+# Install from pypi
+pip install ecoport
+
+# Install from source code
+git clone https://github.com/eiphy/conda-export.git
+cd conda-export && pip install .
+
+# Install in editabble mode
+git clone https://github.com/eiphy/conda-export.git
+cd conda-export && pip install -e .
+```
+
 ## Sample Output
 Output of `conda env export --from-history` with version number.
 ```yaml
